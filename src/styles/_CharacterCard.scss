@@ -1,0 +1,29 @@
+.character-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 30px 20px 30px;
+    border: 1px solid rgba(60, 60, 242, 0.933);
+    border-radius: 10px;
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+
+    &>h4 {
+        font-style: italic;
+    }
+    &>button {
+        border-radius: 5px;
+        background-color: rgba(50, 50, 250, 0.306);
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 10px;
+
+        &:hover{
+            background-color: rgba(85, 85, 247, 0.848);
+            font-size: medium;
+            cursor: pointer;
+        }
+    }
+}

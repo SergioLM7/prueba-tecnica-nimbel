@@ -1,0 +1,44 @@
+.collection-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+}
+
+.favorites-container {
+    display:grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
+    gap: 5px;
+    text-align: center;
+}
+
+.favorite-element {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1.5px solid blue;
+    border-radius: 10px;
+
+    &>h4 {
+        font-style: italic;
+    }
+}
+
+.delete-button {
+    border-radius: 5px;
+        background-color: rgba(50, 50, 250, 0.306);
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 10px;
+
+        &:hover{
+            background-color: rgba(85, 85, 247, 0.848);
+            font-size: medium;
+            cursor: pointer;
+        }
+}
