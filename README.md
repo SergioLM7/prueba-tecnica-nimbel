@@ -49,3 +49,22 @@ No es necesario hacer un backend aunque es valorable mantener una arquitectura q
 
 ✅ Añadir la opción de "editar" un personaje.
 
+## Instalación en local
+Clona el repositorio:
+
+```
+git clone https://github.com/SergioLM7/prueba-tecnica-nimbel/
+
+```
+
+Instala las dependecias:
+
+```bash
+npm install
+```
+
+Ejecuta el modo desarrollo:
+```bash
+npm run dev
+```
+
