@@ -1,5 +1,6 @@
 import { names, races, skills } from '../services/collections'
 import { getRandomImage } from '../services/images';
+import uuid4 from "uuid4";
 import { useState } from "react";
 
 export const useCharacterGenerator = () => {
@@ -21,6 +22,7 @@ export const useCharacterGenerator = () => {
 
 
         setRandomCharacter({
+            id: uuid4(),
             name: names[randomPositionNames],
             age: randomAge,
             race: races[randomPositionRaces],

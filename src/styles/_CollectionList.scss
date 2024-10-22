@@ -5,6 +5,10 @@
     align-items: center;
     width: 100%;
     max-width: 800px;
+
+    &>h2 {
+        text-align: center;
+    }
 }
 
 .favorites-container {
@@ -15,30 +19,48 @@
     text-align: center;
 }
 
-.favorite-element {
-    margin: 10px;
+.edit-character-form {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    border: 1.5px solid blue;
-    border-radius: 10px;
+    align-items: center;
+    gap: 10px;
 
-    &>h4 {
-        font-style: italic;
-    }
-}
-
-.delete-button {
-    border-radius: 5px;
+    &>button {
+        border-radius: 5px;
         background-color: rgba(50, 50, 250, 0.306);
         text-align: center;
         font-weight: bold;
         margin-bottom: 10px;
+        width: 30%;
 
-        &:hover{
-            background-color: rgba(85, 85, 247, 0.848);
+        &.save-button:hover{
+            background-color: rgba(43, 186, 52, 0.816);
             font-size: medium;
             cursor: pointer;
         }
+
+        &.cancel-button:hover{
+            background-color: rgba(245, 56, 56, 0.848);
+            font-size: medium;
+            cursor: pointer;
+        }
+    }
+
+    &>.input-container {
+        display: flex;
+        justify-content: space-between;
+        
+        &>label {
+            margin-right: 10px;
+            font-weight: bolder;
+        }
+
+        &>input {
+            border: 1px solid rgba(50, 50, 250, 0.306);
+            border-radius: 5px;
+            padding: 4px;
+       
+        }
+    }
 }

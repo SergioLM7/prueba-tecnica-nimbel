@@ -1,0 +1,33 @@
+.favorite-element {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1.5px solid blue;
+    border-radius: 10px;
+
+    &>h4 {
+        font-style: italic;
+    }
+
+    &>button {
+        border-radius: 5px;
+        background-color: rgba(50, 50, 250, 0.306);
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 10px;
+
+        &.delete-button:hover{
+            background-color: rgba(245, 56, 56, 0.848);
+            font-size: medium;
+            cursor: pointer;
+        }
+
+        &.edit-button:hover{
+            background-color: rgba(43, 186, 52, 0.816);
+            font-size: medium;
+            cursor: pointer;
+        }
+    }
+}
